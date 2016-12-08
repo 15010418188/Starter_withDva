@@ -13,7 +13,6 @@ const MainLayout = ({
   mainLayout,
   auth
 }) => {
-
   const onCollapseChange = (value) => {
     dispatch({
       type:'mainLayout/collapseMenu',
@@ -37,13 +36,10 @@ const MainLayout = ({
     mainLayout
   }
 
-  const logOut = () => {
-    dispatch({ type: 'auth/logout' });
-  }
+
 
   const HeaderProps = {
-    auth,
-    logOut
+
   }
 
   return (
@@ -69,8 +65,8 @@ MainLayout.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-function mapStateToProps({ mainLayout , auth}) {
-  return { mainLayout, auth }
+function mapStateToProps({ mainLayout }) {
+  return { mainLayout }
 }
 
 export default connect(mapStateToProps)(MainLayout);

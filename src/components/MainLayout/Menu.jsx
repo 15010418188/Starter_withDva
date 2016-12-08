@@ -43,26 +43,26 @@ function MenuBar({ location,mainLayout,onCollapseChange}) {
         selectedKeys={[getMenuKeyFromUrl(location.pathname)]}>
 
         <SubMenu title={analyticalTitle}>
-          <Menu.Item key="/activity">
-            <Link to="/activity">
-              <span className={styles.nav_text}>报活数据</span>
+          <Menu.Item key="/analyic/monthly">
+            <Link to="/analyic/monthly">
+              <span className={styles.nav_text}>月报活数据</span>
             </Link>
           </Menu.Item>
-          <Menu.Item key="/install">
-            <Link to="/install">
-              <span className={styles.nav_text}>安装数据</span>
+          <Menu.Item key="/analyic/daily">
+            <Link to="/analyic/daily">
+              <span className={styles.nav_text}>日报活数据</span>
             </Link>
           </Menu.Item>
-          <Menu.Item key="/version">
-            <Link to="/version">
+          <Menu.Item key="/analyic/version">
+            <Link to="/analyic/version">
               <span className={styles.nav_text}>版本数据</span>
             </Link>
           </Menu.Item>
         </SubMenu>
 
         <SubMenu title={settingTitle}>
-          <Menu.Item key="/managent">
-            <Link to="/managent">
+          <Menu.Item key="/setting/managent">
+            <Link to="/setting/managent">
               <span className={styles.nav_text}>企业信息</span>
             </Link>
           </Menu.Item>

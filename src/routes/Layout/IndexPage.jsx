@@ -4,7 +4,7 @@ import { connect } from 'dva';
 import { Link } from 'dva/router';
 import styles from './IndexPage.less';
 
-function IndexPage( { dispatch , example }) {
+const IndexPage = ( { dispatch , example })  => {
   const click = () => {
       dispatch({  type: 'example/fetchRemote' })
   }

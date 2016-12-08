@@ -3,8 +3,8 @@
 export default {
   namespace: 'mainLayout',
   state: {
-    collapse : true,
-    menuMode : 'vertical' ,
+    collapse : false,
+    menuMode : 'inline' ,
     showMenu : true ,
   },
   reducers: {

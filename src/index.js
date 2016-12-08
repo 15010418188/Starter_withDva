@@ -22,7 +22,11 @@ const app = dva({
 
 // 3. Model
 app.model(require('./models/mainLayout'));
-app.model(require('./models/demo'));
+app.model(require('./models/tree'));
+app.model(require('./models/daily'));
+app.model(require('./models/monthly'));
+app.model(require('./models/install'));
+app.model(require('./models/version'));
 // 4. Router
 app.router(require('./router'));
 

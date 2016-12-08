@@ -42,7 +42,7 @@
     "redbox-react": "^1.2.10"
   },
   "scripts": {
-    "start": "dora --plugins \"browser-history,webpack,webpack-hmr\"",
+    "go": "dora --plugins \"browser-history,webpack,webpack-hmr\"",
     "build": "atool-build",
     "test": "atool-test-mocha ./src/**/*-test.js"
   }
